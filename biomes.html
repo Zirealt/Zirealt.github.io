@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biomes – FloraBank</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("chimney_dublin.jpg"); /* ton fond existant */
+      background-size: cover;
+      background-position: center;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: #007B55;
+    }
+
+    h1 {
+      margin-top: 30px;
+      color: #222;
+      background-color: rgba(255, 255, 255, 0.7);
+      display: inline-block;
+      padding: 10px 25px;
+      border-radius: 10px;
+    }
+
+    .centered-title {
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .biome-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1000px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.8); /* légère transparence */
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .biome {
+      text-align: center;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      overflow: hidden;
+    }
+
+    .biome:hover {
+      transform: scale(1.03);
+    }
+
+    .biome img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .biome p {
+      padding: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .biome {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: inherit; /* hérite la couleur du parent */
+}
+
+.biome p {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><img src="FloraBank.png" alt="Logo FloraBank"></a>
+    <nav>
+      <a href="famille.html">Familles</a> |
+      <a href="biomes.html">Biomes</a>
+    </nav>
+  </header>
+
+  <h1 class="centered-title">Biomes étudiés</h1>
+
+  <section class="biome-grid">
+    <a class="biome" href="mare.html">
+      <img src="lacB1.jpg" alt="La Mare">
+      <p>La Mare</p>
+    </a>
+
+    <a class="biome" href="tourbière.html">
+      <img src="tourbiaieB1.jpg" alt="La Tourbière">
+      <p>La Tourbière</p>
+    </a>
+
+    <a class="biome" href="megaforb.html">
+      <img src="megafourbB1.jpg" alt="La Megaforbiaie">
+     <p>La Megaforbiaie</p>
+    </a>
+</section>
+</body>
+</html>
