@@ -1,74 +1,181 @@
 const plantsInfo = {
     Sphaigne: {
-        title: "Sphaigne (Sphagnum)",
-        description: "Les sphaignes sont des mousses capables de retenir beaucoup d'eau. Elles sont à l'origine de la formation de la tourbe en accumulant la matière organique dans des milieux pauvres en oxygène.",
+        name_common: "Sphaigne",
+        name_scientific: "Sphagnum spp.",
         family: "Sphagnaceae",
-        habitat: "Zones humides, tourbières acides"
+        port: "coussin ou tapis",
+        status: "LC",
+        cycle: "persistant",
+        
+        characteristics: "Mousse pionnière, constituant principal des tourbières acides. Elle pousse en tapis spongieux et gorgés d'eau.",
+        habitat: "milieux acides et humides : tourbières, zones marécageuses ou détrempées",
+        morphology : "Pas de système racinaire. La tige est fine, rougeâtre ou verte, portant une ramification en étoile",
+        reproduction : "Les sphaignes sont dioïque et peuvent se reproduire de manière sexuée via des spores ou asexuée par fragmentation.",
+        physiology: "Les sphaignes sont des mousses gorgées d'eau qu'elles absorbent par leurs feuilles pourvues de hyalocytes, des cellules mortes capables de retenir jusqu'à 20 fois leur poids en eau. Leur croissance est lente et se fait sous forme de coussin et de tapis. Elles acidifient leur milieu en captant des cations comme le calcium et le magnésium.",
+        ecological_works : "Spécifique des tourbières acides, les sphaignes produisent la tourbe par décomposition, stocke l'eau dans le milieu, retient le carbone et fournit un habitat pour d'autres espèces.",
+        usage: "Séchée, elle peut permettre utilisée comme pansement naturel, matériel absorbant ou isolant thermique et phonique. ",
+        threats: "Le genre n'est pas globalement menacé, mais certaines espèces le sont localement à cause de la destruction de leur habitat (tourbières).",
     },
 
     EricaTetralix: {
-        title: "Erica Tetralix (Bruyère des marais)",
-        description: "Cette plante est typique des tourbières et des landes humides, avec des fleurs roses en grappes qui attirent les pollinisateurs.",
+        name_common: "Bruyère des marais",
+        name_scientific: "Erica tetralix",
         family: "Ericaceae",
-        habitat: "Tourbières, landes humides"
+        port: "Buissonnant (30-60cm)",
+        status: "LC",
+        cycle: "pérenne",
+        
+        characteristics: "Herbacée vivace, contrivuant à la structuration et la conservation des tourbières",
+        habitat: "La Bruyère des marais privilégie les milieux humides et acides commes les tourbières, landes humides, prairies humides et aulnaies marécageuses. Elle pousse dans des climats tempérés à humides avec précipitations régulières.",
+        morphology : "Feuilles pourvues de long poils munis de glandes adhésives, disposées en spirale sur les tiges. Fleurs roses à pourpre en grappes terminales, roses à pourpres à corolle tubulaire. Racines fasciculées et peu profondes, branches souvent densément ramifiées.",
+        reproduction : "Reproduction sexuée par graines issus de pollinisation par insectes. Ou asexuée par régénération des bourgeons à la base si les tiges sont endommagées.",
+        physiology: "La Bruyère des marais est autogame. Elle s'autoféconde grâce à un nectar parfumé et loge des petits insectes dans ses corolles qui y pondent leurs oeufs. Les larves naissantes se nourrissent du nectar",
+        ecological_works : "La bruyère des marais est héliophile et hygrophyle. Elle est caractéristique d'un sol très acide et pauvre en azote.",
+        usage: "Ornemental ou médicinal",
+        threats: "Le genre n'est pas globalement menacé.",
     },
 
     PolytrichumCommune: {
-        title: "Polytrichum commune",
-        description: "Mousse robuste et ubiquiste, elle pousse dans les milieux acides et humides et joue un rôle important dans la structure des tourbières.",
+        name_common: "Polytrichum commune",
+        name_scientific: "Polytriche commun",
         family: "Polytrichaceae",
-        habitat: "Tourbières, sols acides"
+        port: "mousse dressée et rigide (10-20cm)",
+        status: "LC",
+        cycle: "pérenne",
+        
+        characteristics: "Petite mousse dressée formajt des tapis denses.",
+        habitat: "Privilégie les zones humides ou acides. On la trouve dans les marais, les bords d'étangs à l'ombre.",
+        morphology : "D'environ 30 à 50cm de haut, elles présentent une gaine blanchâtre à la base des feuilles. Celle ci sont longues et étroites, entièrement occupée par la nervure",
+        reproduction : "Espèce dioïque, reproduction sexuée par productions de spores dans le sporophytes, ou asexuée par fragmentation.",
+        physiology: "A phase haploïde dominante, sa croissance est lente et persistante. Capable de retenir beaucoup d'eau",
+        ecological_works : "Forme des tapis denses qui stabilisent le sol et limitent l'érosion. Participent également au stockage de l'eau.",
+        usage: "Autrefois utilisé comme matériau absorbant ou isolant naturel. Aujourd'hui utilisée dans la restaurationd des tourbières",
+        threats: "Sujet au drainage des tourbières et à l'eutrophisation",
     },
 
     Aulne: {
-        title: "Aulne (Alnus)",
-        description: "Cet arbre est en symbiose avec un actinomycète, une bactérie fixant l'azote atmosphérique. L'ammoniac produit enrichit le sol en azote.",
+        name_common: "Aulne",
+        name_scientific: "Alnus",
         family: "Bétulaceae",
-        habitat: "Berges, forêts humides, zones inondables"
+        port: "conique (15-25m)",
+        status: "LC",
+        cycle: "pérenne (50-100 ans)",
+        
+        characteristics: "Arbre de taille moyenne, pionnier des zones humides qu'il colonise. l'Aulne est capable de fixer l'azote et de stabiliser les sols saturés en eau. Il forme des aulnaies",
+        habitat: "Privilégie les sols humides et riches en nutriments de l'hémisphère nord.",
+        morphology : "Les feuilles sont ovales et tronquées au sommet, la face inférieure étant mate avec des touffes de poils à l'angle des nervures. Les fleurs sont organisées en chatons mâles et femelles, ces dernières donnant naissances à des strobiles ligneux. Son écorce est brun-noir et crevassée ",
+        reproduction : "Sexuée via les graines contenues dans les strobiles, ou par regénération végétative",
+        physiology: "Espèce colonisatrice à croissance rapide, l'aulne possède des nodules racinaires abritant des bactéries fixatrices d'azote (Frankia alni). C'est une espèce héliophile et hygrophile, capable de tolérer des inondations temporaires. Ces racines développent des aérenchymes lui permettant de survivre dans des sols gorgés d'eau voire inondé. ",
+        ecological_works : "Espèce importante : Elle constitue un puit de carbone et contribue à la purification de l'eau. Il constitue également un habitat pour de nombreuses espèces.",
+        usage: "Utilisé comme engrais vert, anti-inflammatoire, arbre d'ornement ou de protection contre l'érosion. Il peut également servir de poteau immergé car imputrescible sous l'eau ",
+        threats: "L'aulne est menacé par de nombreux maladies et parasites tels que la Phytophtora alni, un oomycète causant son dépérissement ainsi que par l'exploitation forestière",
     },
 
     AngeliqueDesBois: {
-        title: "Angélique des bois (Angelica sylvestris)",
-        description: "L'angélique des bois possède des ombelles comptant jusqu'à 200 fleurs. Ses fruits ont deux stigmates en forme de filaments blancs.",
+        name_common: "Angelique des bois",
+        name_scientific: "Angelica sylvestris",
         family: "Apiaceae",
-        habitat: "Prairie humide et lisière fraîche."
+        port: "érigé (1-2m)",
+        status: "LC",
+        cycle: "Annuel",
+        
+        characteristics: "L'Angélique des bois est une plante herbacée vivace, poussant dans les zones humides et boisées. Elle est reconnaissable grâce à ses ombelles blanches pourvues de nombreuses fleurs.",
+        habitat: "Zones humides et boisées du Nord-Ouest de l'Eurasie",
+        morphology : "Les feuilles sont ovales et dentées, grandes et composées. Les fleurs blanches sont regroupées en ombelles de 20 à 40 rayons sans involucre. Les fruits sont des di-akènes. La tige est robuse et rougeâtre à la base ",
+        reproduction : "Majoritairement sexuée par graines, (plante hermaphrodite) anémochore et entomogame. Elle peut également se reproduire par division végétative.",
+        physiology: "Il s'agit d'une plante héliophile à croissance rapide, pollinisée par les insectes. Elle recquiert des forts taux d'azote et de minéraux. Ses tissus racinaires dotés d'aérenchyme lui permet de supporter des saturations en eau temporaires.",
+        ecological_works : "Sa croissance rapide et sa forte biomasse lui permet d'accumuler du carbone et de fertiliser le sol, ses nombreuses fleurs fournissent du nectar aux pollinisateurs et sa présence dans les stades intermédiaires de succession lui permet de stabiliser les milieux ouverts.",
+        usage: "Usage médicinaux et alimentaires dans le passé",
+        threats: "Drainage des zones humides et surexploitation",
     },
 
     SauleCendre: {
-        title: "Saule cendré (Salix cinerea)",
-        description: "En Grèce Antique, les décoctions d'écorce de saule étaient utilisées contre la fièvre, grâce à un précurseur de l'acide salicylique, principe actif de l'aspirine.",
+        name_common: "Saule cendré",
+        name_scientific: "Salix cinerea",
         family: "Salicaceae",
-        habitat: "Marais et bord d'étangs"
+        port: "buissonnant (2-6m)",
+        status: "LC",
+        cycle: "pérenne (30-50 ans)",
+        
+        characteristics: "",
+        habitat: "Zones humides ou marécageuse comme les tourbières, les berges, ou les zones marécageuses de l'hémisphère nord.",
+        morphology : "Le bourgeon est lisse et recouvert d'une seule écaille donnant naissance à un fruit de type capsule, les feuilles sont obovales, alternes, longues (jusqu'à 12cm), rugueuses et a pointes courtes. Son écorce estt lisse et grise, avec de larges fissures peu profondes.",
+        reproduction : "Espèce dioïque à reproduction végétative ou sexuée. Pollinisation entomogame ou anémogame.",
+        physiology: "Espèce héliophile et hygrophile, pouvant tolérer des inondations prolongées",
+        ecological_works : "Il s'agit d'une espèce pionnière et colonisatrice des milieux humides, lui permettant de stabiliser les sols et limiter l'érosion. Elle peut également absorber les métaux lourds dans une certaine mesure et joue donc un rôle de filtration",
+        usage: "En Grèce Antique, les décoctions d'écorce de saule permettaient de faire chuter la fièvre grâce à un précurseur de l'acide salycilique présent dans l'aspirine. Faire des cristaux issus de la décoction permet d'isoler la molécule.",
+        threats: "Disparition liées au drainage des zones humides, le saule cendré peut également rentrer en concurrence avec des espèces envahissantes comme Salix Alba",
     },
 
     GrandeOrtie: {
-        title: "Grande Ortie (Urtica dioica)",
-        description: "Faire macérer cette plante permet de produire du purin. Elle libère de l'acide formique via ses poils urticants.",
+        name_common: "Grande Ortie",
+        name_scientific: "Urtica dioica",
         family: "Urticaceae",
-        habitat: "Sols riches en azote, lisières, friches et bords de chemins"
+        port: "Erigé",
+        status: "LC",
+        cycle: "",
+        
+        characteristics: "Grande herbacée vivace connu pour ses poils urticants, elle est signe d'un milieu riche en azote",
+        habitat: "Zones tempérées et subtropicales, dans les prairies humides, les friches, les bords de chemins...",
+        morphology : "Feuilles couvertes de poils urticants, oblongues, en coeur et opposées, dentées. Tige quadrangulaire",
+        reproduction : "Végétative ou sexuée par anémochorie",
+        physiology: "Un réseau de rhizome souterrain lui permet de repousser chaque année",
+        ecological_works : "Il s'agit d'une espèce pionnière et nitrophile qui contribue au cycle de l'azote et à la restructuration des sols.",
+        usage: "Parfois utilisée en cataplasme comme soin pour les cheveux ou pour contrer les rhumatismes",
+        threats: "Espèce commune parfois envahissante",
     },
 
     nymphea: {
-        title: "Nymphéa blanc (Nymphéa alba)",
-        description:
-            "Le nymphéa blanc est une plante aquatique flottante connue pour ses grandes fleurs blanches et ses feuilles arrondies.",
-        family: "Nymphéacées",
-        habitat: "Plans d'eau calmes comme mares, étangs et lacs peu profonds."
+        name_common: "Nénuphar blanc",
+        name_scientific: "Nymphéa Blanc",
+        family: "Nymphaeaceae",
+        port: "Flottant",
+        status: "LC",
+        cycle: "Vivace",
+        
+        characteristics: "Plante flottante des mares et étangs calmes. Elles forment un tapis flottant à la surface de l'eau",
+        habitat: "Eaux stagnantes à lente, peu profondes. Sur substrat vaseux riche en matière organique",
+        morphology : "Feuille verte sombre en forme de coeur rond avec un long pétiole pourvu d'un rhizome. La fleur est à pétale rosée",
+        reproduction : "Végétative ou sexuée entomogame",
+        physiology: "Espèce aquatique hydrophile pourvue d'un parenchyme aérifère lui permettant d'assurer sa flottaison. La photosynthèse se fait uniquement sur la partie supérieure de la feuille, emergée",
+        ecological_works : "Supporte la ponte d'organismes aquatiques. Elle participe également à l'oxygénation du milieu et à l'équilibre thermique du milieu en limitant la prolifération des algues",
+        usage: "Ornemental",
+        threats: "Récolte ornementale excessive et eutrophisation",
     },
 
     roseau: {
-        title: "Roseau commun (Phragmites australis)",
-        description:
-            "Le roseau commun est une grande plante herbacée des zones humides, souvent utilisée pour stabiliser les berges.",
-        family: "Poacées",
-        habitat: "Zones humides, marais, bords de cours d'eau et étangs."
+        name_common: "Roseau commun",
+        name_scientific: "Phragmites Australis",
+        family: "Poaceae",
+        port: "Elancé",
+        status: "LC",
+        cycle: "vivace",
+        
+        characteristics: "",
+        habitat: "Espèce cosmopolite des milieux humides, prospérant sur des sols gorgés d'eau et peu oxygéné",
+        morphology : "Feuilles alternes et longues pourvues d'une gaine, les fleurs sont disposées en long plumeau violacés à maturité. Ses racines forment un long réseau de rhizomes horizontaux favorisant sa colonisation rapide. La tige est creuse, dressée et rigide",
+        reproduction : "Principalement végétative grâce aux rhizomes, parfois sexuée par dispersition de graines légères par anémochories",
+        physiology: "Plantes hélophytes pourvues d'un parenchyme aérifère permettant la circulation de l'air dans les sols saturés. Croissance rapide",
+        ecological_works : "Utilisés comme abri pour des passereaux ou petits mammifères",
+        usage: "Utilisation locale pour la toiture et les murs des maisons (Moyen-Orient), également utilisé en phytoépuration",
+        threats: "Espèce commune et parfois envahissante",
     },
 
     mentha: {
-        title: "Menthe aquatique (Mentha aquatica)",
-        description:
-            "La menthe aquatique est une plante aromatique qui pousse sur les rives humides, avec un parfum caractéristique de menthe.",
-        family: "Lamiacées",
-        habitat: "Rives des étangs, mares et zones humides."
+        name_common: "Menthe aquatique",
+        name_scientific: "Mentha aquatica",
+        family: "Lamiaceae",
+        port: "Vivace (30 à 100cm)",
+        status: "LC",
+        cycle: "vivace",
+        
+        characteristics: "La menthe aquatique est une herbacée vivace connue pour ses propriétés aromatiques",
+        habitat: "Plante de berge ou semi-aquatiques originaire d'Europe, d'Afrique du Nord, du Proche-Orien ou du Caucase. ",
+        morphology : "Feuilles vert-foncé parfois rougeâtre, pétiolées, opposées-décussées, ovales-lancéolées. Les fleurs blanches ou roses forment un glomérule terminal et 1 à 4 glomérules axilliaires. Le fruit, tétrakène, reste au fond du calice",
+        reproduction : "végétative ou sexuée par pollinisation hydrogame ou entomogame",
+        physiology: "La présence de menthol synthétisé par les poils glandulaires à la surface de la plante lui confère ses propriétés aromatiques",
+        ecological_works : "Source de nectar pour les insectes, elle permet également de limiter l'érosion et stabiliser les berges",
+        usage: "Utilisée en infusion pour ces propriétés antiseptiques ou comme arôme/parfum",
+        threats: "Drainage des zones humides, concurrence avec des espèces envahissantes.",
     }
 };
