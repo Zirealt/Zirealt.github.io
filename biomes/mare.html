@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tourbière - FloraBank</title>
   <link rel="stylesheet" href="../styles/biomes.css">
+  <link rel="stylesheet" href="../styles/modal.css">
 </head>
 
 <body>
 
   <header>
-    <a href="index.html"><img src="../images/florabank.png" alt="Logo FloraBank" /></a>
+    <a href="../index.html"><img src="../images/florabank.png" alt="Logo FloraBank" /></a>
     <nav>
       <a href="../famille.html">Familles</a> |
       <a href="../biomes.html">Biomes</a>
@@ -59,94 +60,9 @@
     </div>
   </section>
 
-  <!-- Modals -->
-  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
-    aria-describedby="modalDesc">
-    <div class="modal-content">
-      <span class="close-btn" aria-label="Fermer la fenêtre">&times;</span>
-      <h2 id="modalTitle">Titre de la plante</h2>
-      <p id="modalDesc">Description de la plante</p>
-      <p><strong>Famille :</strong> <span id="modalFamily"></span></p>
-      <p><strong>Habitat :</strong> <span id="modalHabitat"></span></p>
-    </div>
-  </div>
+  <script src="../scripts/plants_info.js"></script>
+  <script src="../scripts/biomes_modals.js"></script>
 
-  <script>
-    // Données des plantes
-    const plantsInfo = {
-      nymphea: {
-        title: "Nymphéa blanc (Nymphéa alba)",
-        description:
-          "Le nymphéa blanc est une plante aquatique flottante connue pour ses grandes fleurs blanches et ses feuilles arrondies.",
-        family: "Nymphéacées",
-        habitat: "Plans d'eau calmes comme mares, étangs et lacs peu profonds."
-      },
-      roseau: {
-        title: "Roseau commun (Phragmites australis)",
-        description:
-          "Le roseau commun est une grande plante herbacée des zones humides, souvent utilisée pour stabiliser les berges.",
-        family: "Poacées",
-        habitat: "Zones humides, marais, bords de cours d'eau et étangs."
-      },
-      mentha: {
-        title: "Menthe aquatique (Mentha aquatica)",
-        description:
-          "La menthe aquatique est une plante aromatique qui pousse sur les rives humides, avec un parfum caractéristique de menthe.",
-        family: "Lamiacées",
-        habitat: "Rives des étangs, mares et zones humides."
-      }
-    };
-
-    const modal = document.getElementById("modal");
-    const modalTitle = document.getElementById("modalTitle");
-    const modalDesc = document.getElementById("modalDesc");
-    const modalFamily = document.getElementById("modalFamily");
-    const modalHabitat = document.getElementById("modalHabitat");
-    const closeBtn = document.querySelector(".close-btn");
-
-    // Ouvre le modal avec les infos correctes
-    function openModal(plantKey) {
-      const plant = plantsInfo[plantKey];
-      if (!plant) return;
-      modalTitle.textContent = plant.title;
-      modalDesc.textContent = plant.description;
-      modalFamily.textContent = plant.family;
-      modalHabitat.textContent = plant.habitat;
-      modal.style.display = "flex";
-      document.body.style.overflow = "hidden"; // Bloquer scroll arrière-plan
-    }
-
-    // Ferme le modal
-    function closeModal() {
-      modal.style.display = "none";
-      document.body.style.overflow = ""; // Réactiver scroll
-    }
-
-    // Event listeners sur chaque carte de plante
-    document.querySelectorAll(".plant-card").forEach(card => {
-      card.addEventListener("click", () => {
-        const plantKey = card.getAttribute("data-plant");
-        openModal(plantKey);
-      });
-    });
-
-    // Event listener bouton fermeture
-    closeBtn.addEventListener("click", closeModal);
-
-    // Fermer modal en cliquant en dehors du contenu
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        closeModal();
-      }
-    });
-
-    // Fermer modal avec touche "Escape"
-    window.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && modal.style.display === "flex") {
-        closeModal();
-      }
-    });
-  </script>
 </body>
 
 </html>

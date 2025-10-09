@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tourbière - FloraBank</title>
   <link rel="stylesheet" href="../styles/biomes.css">
+  <link rel="stylesheet" href="../styles/modal.css">
 </head>
 
 <body>
 
   <header>
-    <a href="index.html"><img src="../images/florabank.png" alt="Logo FloraBank" /></a>
+    <a href="../index.html"><img src="../images/florabank.png" alt="Logo FloraBank" /></a>
     <nav>
       <a href="../famille.html">Familles</a> |
       <a href="../biomes.html">Biomes</a>
@@ -28,6 +29,7 @@
     </p>
   </div>
 
+  <!-- Sphaigne -->
   <section class="plants-grid">
     <div class="plant-card" data-plant="Sphaigne">
       <img src="../images/sphaigne.jpg" alt="Sphaigne" />
@@ -37,6 +39,7 @@
       </div>
     </div>
 
+    <!-- Erica Tetralix -->
     <div class="plant-card" data-plant="EricaTetralix">
       <img src="../images/ericatetralix.jpg" alt="Erica Tetralix" />
       <div class="overlay">
@@ -45,6 +48,7 @@
       </div>
     </div>
 
+    <!-- Polytrichum Commune -->
     <div class="plant-card" data-plant="PolytrichumCommune">
       <img src="../images/polytrichumcommune.jpg" alt="Polytrichum commune" />
       <div class="overlay">
@@ -54,84 +58,8 @@
     </div>
   </section>
 
-  <!-- Modal -->
-  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
-    aria-describedby="modalDesc">
-    <div class="modal-content">
-      <span class="close-btn" aria-label="Fermer la fenêtre">&times;</span>
-      <h2 id="modalTitle">Titre de la plante</h2>
-      <p id="modalDesc">Description de la plante</p>
-      <p><strong>Famille :</strong> <span id="modalFamily"></span></p>
-      <p><strong>Habitat :</strong> <span id="modalHabitat"></span></p>
-    </div>
-  </div>
-
-  <script>
-    const plantsInfo = {
-      Sphaigne: {
-        title: "Sphaigne (Sphagnum)",
-        description: "Les sphaignes sont des mousses capables de retenir beaucoup d'eau. Elles sont à l'origine de la formation de la tourbe en accumulant la matière organique dans des milieux pauvres en oxygène.",
-        family: "Sphagnaceae",
-        habitat: "Zones humides, tourbières acides"
-      },
-      EricaTetralix: {
-        title: "Erica Tetralix (Bruyère des marais)",
-        description: "Cette plante est typique des tourbières et des landes humides, avec des fleurs roses en grappes qui attirent les pollinisateurs.",
-        family: "Ericaceae",
-        habitat: "Tourbières, landes humides"
-      },
-      PolytrichumCommune: {
-        title: "Polytrichum commune",
-        description: "Mousse robuste et ubiquiste, elle pousse dans les milieux acides et humides et joue un rôle important dans la structure des tourbières.",
-        family: "Polytrichaceae",
-        habitat: "Tourbières, sols acides"
-      }
-    };
-
-    const modal = document.getElementById("modal");
-    const modalTitle = document.getElementById("modalTitle");
-    const modalDesc = document.getElementById("modalDesc");
-    const modalFamily = document.getElementById("modalFamily");
-    const modalHabitat = document.getElementById("modalHabitat");
-    const closeBtn = document.querySelector(".close-btn");
-
-    function openModal(plantKey) {
-      const plant = plantsInfo[plantKey];
-      if (!plant) return;
-      modalTitle.textContent = plant.title;
-      modalDesc.textContent = plant.description;
-      modalFamily.textContent = plant.family;
-      modalHabitat.textContent = plant.habitat;
-      modal.style.display = "flex";
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeModal() {
-      modal.style.display = "none";
-      document.body.style.overflow = "";
-    }
-
-    document.querySelectorAll(".plant-card").forEach(card => {
-      card.addEventListener("click", () => {
-        const plantKey = card.getAttribute("data-plant");
-        openModal(plantKey);
-      });
-    });
-
-    closeBtn.addEventListener("click", closeModal);
-
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        closeModal();
-      }
-    });
-
-    window.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && modal.style.display === "flex") {
-        closeModal();
-      }
-    });
-  </script>
+  <script src="../scripts/plants_info.js"></script>
+  <script src="../scripts/biomes_modals.js"></script>
 
 </body>
 

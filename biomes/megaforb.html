@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mégaforbiaie - FloraBank</title>
   <link rel="stylesheet" href="../styles/biomes.css">
+  <link rel="stylesheet" href="../styles/modal.css">
 </head>
 
 <body>
 
   <header>
-    <a href="index.html"><img src="../images/florabank.png" alt="Logo FloraBank" /></a>
+    <a href="../index.html"><img src="../images/florabank.png" alt="Logo FloraBank" /></a>
     <nav>
       <a href="../famille.html">Familles</a> |
       <a href="../biomes.html">Biomes</a>
@@ -36,6 +37,7 @@
       </div>
     </div>
 
+    <!-- Angelique des bois -->
     <div class="plant-card" data-plant="AngeliqueDesBois">
       <img src="../images/angelica.jpg" alt="Angélique des Bois" />
       <div class="overlay">
@@ -44,6 +46,7 @@
       </div>
     </div>
 
+    <!-- Saule Cendre -->
     <div class="plant-card" data-plant="SauleCendre">
       <img src="../images/salixcinerea.jpg" alt="Saule cendré" />
       <div class="overlay">
@@ -52,6 +55,7 @@
       </div>
     </div>
 
+    <!-- Grande Ortie -->
     <div class="plant-card" data-plant="GrandeOrtie">
       <img src="../images/urtica.jpg" alt="Grande Ortie" />
       <div class="overlay">
@@ -61,90 +65,8 @@
     </div>
   </section>
 
-  <!-- Modal -->
-  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
-    aria-describedby="modalDesc">
-    <div class="modal-content">
-      <span class="close-btn" aria-label="Fermer la fenêtre">&times;</span>
-      <h2 id="modalTitle">Titre de la plante</h2>
-      <p id="modalDesc">Description de la plante</p>
-      <p><strong>Famille :</strong> <span id="modalFamily"></span></p>
-      <p><strong>Habitat :</strong> <span id="modalHabitat"></span></p>
-    </div>
-  </div>
-
-  <script>
-    const plantsInfo = {
-      Aulne: {
-        title: "Aulne (Alnus)",
-        description: "Cet arbre est en symbiose avec un actinomycète, une bactérie fixant l'azote atmosphérique. L'ammoniac produit enrichit le sol en azote.",
-        family: "Bétulaceae",
-        habitat: "Berges, forêts humides, zones inondables"
-      },
-      AngeliqueDesBois: {
-        title: "Angélique des bois (Angelica sylvestris)",
-        description: "L'angélique des bois possède des ombelles comptant jusqu'à 200 fleurs. Ses fruits ont deux stigmates en forme de filaments blancs.",
-        family: "Apiaceae",
-        habitat: "Prairie humide et lisière fraîche."
-      },
-      SauleCendre: {
-        title: "Saule cendré (Salix cinerea)",
-        description: "En Grèce Antique, les décoctions d'écorce de saule étaient utilisées contre la fièvre, grâce à un précurseur de l'acide salicylique, principe actif de l'aspirine.",
-        family: "Salicaceae",
-        habitat: "Marais et bord d'étangs"
-      },
-      GrandeOrtie: {
-        title: "Grande Ortie (Urtica dioica)",
-        description: "Faire macérer cette plante permet de produire du purin. Elle libère de l'acide formique via ses poils urticants.",
-        family: "Urticaceae",
-        habitat: "Sols riches en azote, lisières, friches et bords de chemins"
-      }
-    };
-
-    const modal = document.getElementById("modal");
-    const modalTitle = document.getElementById("modalTitle");
-    const modalDesc = document.getElementById("modalDesc");
-    const modalFamily = document.getElementById("modalFamily");
-    const modalHabitat = document.getElementById("modalHabitat");
-    const closeBtn = document.querySelector(".close-btn");
-
-    function openModal(plantKey) {
-      const plant = plantsInfo[plantKey];
-      if (!plant) return;
-      modalTitle.textContent = plant.title;
-      modalDesc.textContent = plant.description;
-      modalFamily.textContent = plant.family;
-      modalHabitat.textContent = plant.habitat;
-      modal.style.display = "flex";
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeModal() {
-      modal.style.display = "none";
-      document.body.style.overflow = "";
-    }
-
-    document.querySelectorAll(".plant-card").forEach(card => {
-      card.addEventListener("click", () => {
-        const plantKey = card.getAttribute("data-plant");
-        openModal(plantKey);
-      });
-    });
-
-    closeBtn.addEventListener("click", closeModal);
-
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        closeModal();
-      }
-    });
-
-    window.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && modal.style.display === "flex") {
-        closeModal();
-      }
-    });
-  </script>
+  <script src="../scripts/plants_info.js"></script>
+  <script src="../scripts/biomes_modals.js"></script>
 
 </body>
 
