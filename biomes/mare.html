@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourbière - FloraBank</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/biomes.css">
+  <link rel="stylesheet" href="../styles/modal.css">
+</head>
+
+<body>
+
+  <header>
+    <a href="../index.html"><img src="../images/florabank.png" alt="Logo FloraBank" /></a>
+    <nav>
+      <a href="../famille.html">Familles</a> |
+      <a href="../biomes.html">Biomes</a>
+    </nav>
+  </header>
+
+  <h1>Plantes de la mare</h1>
+
+  <div class="biome-description">
+    <p>
+      Une mare est une étendue d'eau stagnante peu profonde (pérenne ou non, naturelle ou non), ayant une superficie
+      inférieure à celle d'un étang.
+      On y retrouve 2 grandes catégories de plantes : les plantes aquatiques au centre (submergées, flottantes ou
+      émergées), elles peuvent être hydrophile, hydrophyte ou mésohygrophile et les plantes des berges, souvent
+      hygrophile. On observe ainsi un gradient d'humidité de l'intérieur vers l'exterieur de la mare.
+    </p>
+  </div>
+
+  <section class="plants-grid">
+    <!-- Nymphéa Blanc -->
+    <div class="plant-card" data-plant="nymphea">
+      <img src="../images/nymphblanc.jpg" alt="nymphéa blanc" />
+      <div class="overlay">
+        <h3>Nymphéa blanc</h3>
+        <p>ou Nymphéa alba</p>
+      </div>
+    </div>
+
+    <!-- Le roseau commun -->
+    <div class="plant-card" data-plant="roseau">
+      <img src="../images/roseau.jpg" alt="Roseau commun" />
+      <div class="overlay">
+        <h3>Roseau commun</h3>
+        <p>ou Phragmites Australis</p>
+      </div>
+    </div>
+
+    <!-- Mentha Aquatica -->
+    <div class="plant-card" data-plant="mentha">
+      <img src="../images/menthaquatique.jpg" alt="menthe aquatique" />
+      <div class="overlay">
+        <h3>La menthe aquatique</h3>
+        <p>Une plante aromatique des rives humides</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="../scripts/plants_info.js"></script>
+  <script src="../scripts/biomes_modals.js"></script>
+
+</body>
+
+</html>

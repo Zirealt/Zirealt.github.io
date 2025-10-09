@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tourbière - FloraBank</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/biomes.css">
+  <link rel="stylesheet" href="../styles/modal.css">
+</head>
+
+<body>
+
+  <header>
+    <a href="../index.html"><img src="../images/florabank.png" alt="Logo FloraBank" /></a>
+    <nav>
+      <a href="../famille.html">Familles</a> |
+      <a href="../biomes.html">Biomes</a>
+    </nav>
+  </header>
+
+  <h1>Plantes de la tourbière</h1>
+
+  <div class="biome-description">
+    <p>
+      Une tourbière est une zone humide colonisée par la végétation dans un milieu saturé en eau.
+      On y trouve la tourbe, une matière végétale fossile pauvre en oxygène où la décomposition
+      des matières organiques est ralentie.
+    </p>
+  </div>
+
+  <!-- Sphaigne -->
+  <section class="plants-grid">
+    <div class="plant-card" data-plant="Sphaigne">
+      <img src="../images/sphaigne.jpg" alt="Sphaigne" />
+      <div class="overlay">
+        <h3>Sphaigne</h3>
+        <p>À l'origine de la formation de la tourbe</p>
+      </div>
+    </div>
+
+    <!-- Erica Tetralix -->
+    <div class="plant-card" data-plant="EricaTetralix">
+      <img src="../images/ericatetralix.jpg" alt="Erica Tetralix" />
+      <div class="overlay">
+        <h3>Erica Tetralix</h3>
+        <p>La Bruyère des marais</p>
+      </div>
+    </div>
+
+    <!-- Polytrichum Commune -->
+    <div class="plant-card" data-plant="PolytrichumCommune">
+      <img src="../images/polytrichumcommune.jpg" alt="Polytrichum commune" />
+      <div class="overlay">
+        <h3>Polytrichum commune</h3>
+        <p>Mousse ubiquiste des milieux acides et humides</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="../scripts/plants_info.js"></script>
+  <script src="../scripts/biomes_modals.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mégaforbiaie - FloraBank</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/biomes.css">
+  <link rel="stylesheet" href="../styles/modal.css">
+</head>
+
+<body>
+
+  <header>
+    <a href="../index.html"><img src="../images/florabank.png" alt="Logo FloraBank" /></a>
+    <nav>
+      <a href="../famille.html">Familles</a> |
+      <a href="../biomes.html">Biomes</a>
+    </nav>
+  </header>
+
+  <h1>Mégaforbiaie</h1>
+
+  <div class="biome-description">
+    <p>
+      La mégaforbiaie est une zone humide et tempérée abritant une végétation dense et jouant un rôle écologique essentiel dans les zones de transition entre prairies et forêts.<br><br>
+
+    <strong>Biotope :</strong> La mégaforbiaie se développe dans un climat tempéré humide à montagnard avec des précipitations abondantes. Le sol est humide, anoxique et riche en minéraux et en azote, on peut retrouver des nappes phréatiques en sous-sol ainsi que des engorgements temporaires.<br>
+    <strong>Biocénose :</strong> La végétation est dense et dominée par de grandes eudicotylédones herbacées vivaces (plus d'1m de haut), hygrophile à mesohygrophile comme Urtica dioica, Euphatorium cannabinum ou alnus. <br>
+    <strong>Fonctionnement écologique :</strong> La grande productivité en biomasse de la mégaforbiaie et sa décomposition rapide due à la richesse du sol en minéraux et en eau lui permet de jouer un rôle important dans la filtration des eaux de ruissellement, le stockage temporaire de carbone. Elle sert également de zone tampon entre zones aquatiques et forestières (écotone).<br>
+    <strong>Dynamique :</strong> Stade intermédiaire de la transition écologique, entre la prairie humide et l'aulnaie ou la saulaie si le milieu reste humide. Elle peut en revanche se maintenir grâce à un paturage léger.<br>
+    <strong>Localisation :</strong> Souvent dans les zones montagnardes d'Europe tempérée (Alpes, Pyrénées, Massif Central) mais aussi en Irlande, Grande-Bretagne et Scandinavie.<br>
+    <strong>Enjeux :</strong> La modification du régime hydrique du à l'activité anthropique (drainage, assèchement des zones humides) et la disparition des pratiques traditionnelles (paturage, fauche) menacent la mégaforbiaie. Elle est également sensible à l'eutrophisation et à l'invasion par des espèces exotiques comme la renouée du Japon.<br>
+    </p>
+  </div>
+
+  <section class="plants-grid">
+    <div class="plant-card" data-plant="Aulne">
+      <img src="../images/aulne.jpg" alt="Aulne" />
+      <div class="overlay">
+        <h3>Aulne</h3>
+        <p>En symbiose rhyzobienne avec un actinomycète</p>
+      </div>
+    </div>
+
+    <!-- Angelique des bois -->
+    <div class="plant-card" data-plant="AngeliqueDesBois">
+      <img src="../images/angelica.jpg" alt="Angélique des Bois" />
+      <div class="overlay">
+        <h3>Angélique des Bois</h3>
+        <p>Ses ombelles comptent jusqu'à 200 fleurs !</p>
+      </div>
+    </div>
+
+    <!-- Saule Cendre -->
+    <div class="plant-card" data-plant="SauleCendre">
+      <img src="../images/salixcinerea.jpg" alt="Saule cendré" />
+      <div class="overlay">
+        <h3>Saule cendré</h3>
+        <p>Possède des feuilles gris-vertes au dessous poilu</p>
+      </div>
+    </div>
+
+    <!-- Grande Ortie -->
+    <div class="plant-card" data-plant="GrandeOrtie">
+      <img src="../images/urtica.jpg" alt="Grande Ortie" />
+      <div class="overlay">
+        <h3>Grande Ortie</h3>
+        <p>Libère de l'acide formique via ses poils urticants !</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="../scripts/plants_info.js"></script>
+  <script src="../scripts/biomes_modals.js"></script>
+
+</body>
+
+</html>
