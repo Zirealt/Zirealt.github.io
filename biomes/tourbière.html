@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mégaforbiaie - FloraBank</title>
+  <title>Tourbière - FloraBank</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url("images/chimney_dublin.jpg") no-repeat center center fixed;
+      background: url("../images/chimney_dublin.jpg") no-repeat center center fixed;
       background-size: cover;
       position: relative;
       color: #333;
@@ -27,7 +27,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 10px 30px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     header img {
       height: 50px;
@@ -59,7 +59,7 @@
       font-size: 1.1em;
       line-height: 1.6;
       text-align: center;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     }
     .plants-grid {
       display: grid;
@@ -119,6 +119,7 @@
       font-size: 1.3em;
       margin-bottom: 10px;
     }
+
     /* Modal styles */
     .modal {
       display: none;
@@ -168,51 +169,45 @@
 <body>
 
 <header>
-  <a href="index.html"><img src="images/florabank.png" alt="Logo FloraBank" /></a>
+  <a href="index.html"><img src="../images/florabank.png" alt="Logo FloraBank" /></a>
   <nav>
-    <a href="famille.html">Familles</a> |
-    <a href="biomes.html">Biomes</a>
+    <a href="../famille.html">Familles</a> |
+    <a href="../biomes.html">Biomes</a>
   </nav>
 </header>
 
-<h1>Mégaforbiaie</h1>
+<h1>Plantes de la tourbière</h1>
 
 <div class="biome-description">
   <p>
-    La mégaforbiaie est une forêt humide où se développe une flore très riche et spécifique, favorisée par les sols souvent inondés.
+    Une tourbière est une zone humide colonisée par la végétation dans un milieu saturé en eau. 
+    On y trouve la tourbe, une matière végétale fossile pauvre en oxygène où la décomposition 
+    des matières organiques est ralentie.
   </p>
 </div>
 
 <section class="plants-grid">
-  <div class="plant-card" data-plant="Aulne">
-    <img src="images/aulne.jpg" alt="Aulne" />
+  <div class="plant-card" data-plant="Sphaigne">
+    <img src="../images/sphaigne.jpg" alt="Sphaigne" />
     <div class="overlay">
-      <h3>Aulne</h3>
-      <p>En symbiose rhyzobienne avec un actinomycète</p>
+      <h3>Sphaigne</h3>
+      <p>À l'origine de la formation de la tourbe</p>
     </div>
   </div>
 
-  <div class="plant-card" data-plant="AngeliqueDesBois">
-    <img src="images/angelica.jpg" alt="Angélique des Bois" />
+  <div class="plant-card" data-plant="EricaTetralix">
+    <img src="../images/ericatetralix.jpg" alt="Erica Tetralix" />
     <div class="overlay">
-      <h3>Angélique des Bois</h3>
-      <p>Ses ombelles comptent jusqu'à 200 fleurs !</p>
+      <h3>Erica Tetralix</h3>
+      <p>La Bruyère des marais</p>
     </div>
   </div>
 
-  <div class="plant-card" data-plant="SauleCendre">
-    <img src="images/salixcinerea.jpg" alt="Saule cendré" />
+  <div class="plant-card" data-plant="PolytrichumCommune">
+    <img src="../images/polytrichumcommune.jpg" alt="Polytrichum commune" />
     <div class="overlay">
-      <h3>Saule cendré</h3>
-      <p>Possède des feuilles gris-vertes au dessous poilu</p>
-    </div>
-  </div>
-
-  <div class="plant-card" data-plant="GrandeOrtie">
-    <img src="images/urtica.jpg" alt="Grande Ortie" />
-    <div class="overlay">
-      <h3>Grande Ortie</h3>
-      <p>Libère de l'acide formique via ses poils urticants !</p>
+      <h3>Polytrichum commune</h3>
+      <p>Mousse ubiquiste des milieux acides et humides</p>
     </div>
   </div>
 </section>
@@ -230,29 +225,23 @@
 
 <script>
   const plantsInfo = {
-    Aulne: {
-      title: "Aulne (Alnus)",
-      description: "Cet arbre est en symbiose avec un actinomycète, une bactérie fixant l’azote atmosphérique. L'ammoniac produit enrichit le sol en azote.",
-      family: "Bétulaceae",
-      habitat: "Berges, forêts humides, zones inondables"
+    Sphaigne: {
+      title: "Sphaigne (Sphagnum)",
+      description: "Les sphaignes sont des mousses capables de retenir beaucoup d’eau. Elles sont à l’origine de la formation de la tourbe en accumulant la matière organique dans des milieux pauvres en oxygène.",
+      family: "Sphagnaceae",
+      habitat: "Zones humides, tourbières acides"
     },
-    AngeliqueDesBois: {
-      title: "Angélique des bois (Angelica sylvestris)",
-      description: "L'angélique des bois possède des ombelles comptant jusqu'à 200 fleurs. Ses fruits ont deux stigmates en forme de filaments blancs.",
-      family: "Apiaceae",
-      habitat: "Prairie humide et lisière fraîche."
+    EricaTetralix: {
+      title: "Erica Tetralix (Bruyère des marais)",
+      description: "Cette plante est typique des tourbières et des landes humides, avec des fleurs roses en grappes qui attirent les pollinisateurs.",
+      family: "Ericaceae",
+      habitat: "Tourbières, landes humides"
     },
-    SauleCendre: {
-      title: "Saule cendré (Salix cinerea)",
-      description: "En Grèce Antique, les décoctions d'écorce de saule étaient utilisées contre la fièvre, grâce à un précurseur de l'acide salicylique, principe actif de l'aspirine.",
-      family: "Salicaceae",
-      habitat: "Marais et bord d'étangs"
-    },
-    GrandeOrtie: {
-      title: "Grande Ortie (Urtica dioica)",
-      description: "Faire macérer cette plante permet de produire du purin. Elle libère de l'acide formique via ses poils urticants.",
-      family: "Urticaceae",
-      habitat: "Sols riches en azote, lisières, friches et bords de chemins"
+    PolytrichumCommune: {
+      title: "Polytrichum commune",
+      description: "Mousse robuste et ubiquiste, elle pousse dans les milieux acides et humides et joue un rôle important dans la structure des tourbières.",
+      family: "Polytrichaceae",
+      habitat: "Tourbières, sols acides"
     }
   };
 
