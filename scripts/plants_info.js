@@ -3,83 +3,179 @@ const plantsInfo = {
         name_common: "Sphaigne",
         name_scientific: "Sphagnum spp.",
         family: "Sphagnaceae",
-        port: "",
-        status: "",
-        cycle: "",
+        port: "coussin ou tapis",
+        status: "∅",
+        cycle: "persistant",
         
-        characteristics: "",
+        characteristics: "Mousse pionnière, constituant principal des tourbières acides. Elle pousse en tapis spongieux.",
         habitat: "milieux acides et humides : tourbières, zones marécageuses ou détrempées",
         morphology : "Pas de système racinaire. La tige est fine, rougeâtre ou verte, portant une ramification en étoile",
         reproduction : "Les sphaignes sont dioïque et peuvent se reproduire de manière sexuée via des spores ou asexuée par fragmentation.",
         physiology: "Les sphaignes sont des mousses gorgées d'eau qu'elles absorbent par leurs feuilles pourvues de hyalocytes, des cellules mortes capables de retenir jusqu'à 20 fois leur poids en eau. Leur croissance est lente et se fait sous forme de coussin et de tapis. Elles acidifient leur milieu en captant des cations comme le calcium et le magnésium.",
         ecological_works : "Spécifique des tourbières acides, les sphaignes produisent la tourbe par décomposition, stocke l'eau dans le milieu, retient le carbone et fournit un habitat pour d'autres espèces.",
+        usage: "Séchée, elle peut permettre utilisée comme pansement naturel, matériel absorbant ou isolant thermique et phonique. ",
+        threats: "Le genre n'est pas globalement menacé, mais certaines espèces le sont localement à cause de la destruction de leur habitat (tourbières).",
+    },
+
+    EricaTetralix: {
+        name_common: "Bruyère des marais",
+        name_scientific: "Erica tetralix",
+        family: "Ericaceae",
+        port: "Buissonnant (30-60cm)",
+        status: "∅",
+        cycle: "pérenne",
+        
+        characteristics: "Herbacée vivace, contrivuant à la structuration et la conservation des tourbières",
+        habitat: "La Bruyère des marais privilégie les milieux humides et acides commes les tourbières, landes humides, prairies humides et aulnaies marécageuses. Elle pousse dans des climats tempérés à humides avec précipitations régulières.",
+        morphology : "Feuilles pourvues de long poils munis de glandes adhésives, disposées en spirale sur les tiges. Fleurs roses à pourpre en grappes terminales, roses à pourpres à corolle tubulaire. Racines fasciculées et peu profondes, branches souvent densément ramifiées.",
+        reproduction : "Reproduction sexuée par graines issus de pollinisation par insectes. Ou asexuée par régénération des bourgeons à la base si les tiges sont endommagées.",
+        physiology: "La Bruyère des marais est autogame. Elle s'autoféconde grâce à un nectar parfumé et loge des petits insectes dans ses corolles qui y pondent leurs oeufs. Les larves naissantes se nourrissent du nectar",
+        ecological_works : "La bruyère des marais est héliophile et hygrophyle. Elle est caractéristique d'un sol très acide et pauvre en azote.",
+        usage: "Ornemental ou médicinal",
+        threats: "Le genre n'est pas globalement menacé.",
+    },
+
+    PolytrichumCommune: {
+        name_common: "Polytrichum commune",
+        name_scientific: "Polytriche commun",
+        family: "Polytrichaceae",
+        port: "mousse dressée et rigide (10-20cm)",
+        status: "∅",
+        cycle: "pérenne",
+        
+        characteristics: "Petite mousse dressée formajt des tapis denses.",
+        habitat: "Privilégie les zones humides ou acides. On la trouve dans les marais, les bords d'étangs à l'ombre.",
+        morphology : "D'environ 30 à 50cm de haut, elles présentent une gaine blanchâtre à la base des feuilles. Celle ci sont longues et étroites, entièrement occupée par la nervure",
+        reproduction : "Espèce dioïque, reproduction sexuée par productions de spores dans le sporophytes, ou asexuée par fragmentation.",
+        physiology: "A phase haploïde dominante, sa croissance est lente et persistante. Capable de retenir beaucoup d'eau",
+        ecological_works : "Forme des tapis denses qui stabilisent le sol et limitent l'érosion. Participent également au stockage de l'eau.",
+        usage: "Autrefois utilisé comme matériau absorbant ou isolant naturel. Aujourd'hui utilisée dans la restaurationd des tourbières",
+        threats: "Sujet au drainage des tourbières et à l'eutrophisation",
+    },
+
+    Aulne: {
+        name_common: "Aulne",
+        name_scientific: "Alnus",
+        family: "Bétulaceae",
+        port: "conique (15-25m)",
+        status: "∅",
+        cycle: "pérenne (50-100 ans)",
+        
+        characteristics: "Arbre de taille moyenne, pionnier des zones humides qu'il colonise. l'Aulne est capable de fixer l'azote et de stabiliser les sols saturés en eau. Il forme des aulnaies",
+        habitat: "Privilégie les sols humides et riches en nutriments de l'hémisphère nord.",
+        morphology : "Les feuilles sont ovales et tronquées au sommet, la face inférieure étant mate avec des touffes de poils à l'angle des nervures. Les fleurs sont organisées en chatons mâles et femelles, ces dernières donnant naissances à des strobiles ligneux. Son écorce est brun-noir et crevassée ",
+        reproduction : "Sexuée via les graines contenues dans les strobiles, ou par regénération végétative",
+        physiology: "Espèce colonisatrice à croissance rapide, l'aulne possède des nodules racinaires abritant des bactéries fixatrices d'azote (Frankia alni). C'est une espèce héliophile et hygrophile, capable de tolérer des inondations temporaires. Ces racines développent des aérenchymes lui permettant de survivre dans des sols gorgés d'eau voire inondé. ",
+        ecological_works : "Espèce importante : Elle constitue un puit de carbone et contribue à la purification de l'eau. Il constitue également un habitat pour de nombreuses espèces.",
+        usage: "Utilisé comme engrais vert, anti-inflammatoire, arbre d'ornement ou de protection contre l'érosion. Il peut également servir de poteau immergé car imputrescible sous l'eau ",
+        threats: "L'aulne est menacé par de nombreux maladies et parasites tels que la Phytophtora alni, un oomycète causant son dépérissement ainsi que par l'exploitation forestière",
+    },
+
+    AngeliqueDesBois: {
+        name_common: "Bruyère des marais",
+        name_scientific: "Erica tetralix",
+        family: "Ericaceae",
+        port: "",
+        status: "",
+        cycle: "",
+        
+        characteristics: "",
+        habitat: "",
+        morphology : "",
+        reproduction : "",
+        physiology: "",
+        ecological_works : "",
         usage: "",
         threats: "",
     },
 
-    EricaTetralix: {
-        title: "Erica Tetralix (Bruyère des marais)",
-        description: "Cette plante est typique des tourbières et des landes humides, avec des fleurs roses en grappes qui attirent les pollinisateurs.",
-        family: "Ericaceae",
-        habitat: "Tourbières, landes humides"
-    },
-
-    PolytrichumCommune: {
-        title: "Polytrichum commune",
-        description: "Mousse robuste et ubiquiste, elle pousse dans les milieux acides et humides et joue un rôle important dans la structure des tourbières.",
-        family: "Polytrichaceae",
-        habitat: "Tourbières, sols acides"
-    },
-
-    Aulne: {
-        title: "Aulne (Alnus)",
-        description: "Cet arbre est en symbiose avec un actinomycète, une bactérie fixant l'azote atmosphérique. L'ammoniac produit enrichit le sol en azote.",
-        family: "Bétulaceae",
-        habitat: "Berges, forêts humides, zones inondables"
-    },
-
-    AngeliqueDesBois: {
-        title: "Angélique des bois (Angelica sylvestris)",
-        description: "L'angélique des bois possède des ombelles comptant jusqu'à 200 fleurs. Ses fruits ont deux stigmates en forme de filaments blancs.",
-        family: "Apiaceae",
-        habitat: "Prairie humide et lisière fraîche."
-    },
-
     SauleCendre: {
-        title: "Saule cendré (Salix cinerea)",
-        description: "En Grèce Antique, les décoctions d'écorce de saule étaient utilisées contre la fièvre, grâce à un précurseur de l'acide salicylique, principe actif de l'aspirine.",
-        family: "Salicaceae",
-        habitat: "Marais et bord d'étangs"
+        name_common: "Bruyère des marais",
+        name_scientific: "Erica tetralix",
+        family: "Ericaceae",
+        port: "",
+        status: "",
+        cycle: "",
+        
+        characteristics: "",
+        habitat: "",
+        morphology : "",
+        reproduction : "",
+        physiology: "",
+        ecological_works : "",
+        usage: "",
+        threats: "",
     },
 
     GrandeOrtie: {
-        title: "Grande Ortie (Urtica dioica)",
-        description: "Faire macérer cette plante permet de produire du purin. Elle libère de l'acide formique via ses poils urticants.",
-        family: "Urticaceae",
-        habitat: "Sols riches en azote, lisières, friches et bords de chemins"
+        name_common: "Bruyère des marais",
+        name_scientific: "Erica tetralix",
+        family: "Ericaceae",
+        port: "",
+        status: "",
+        cycle: "",
+        
+        characteristics: "",
+        habitat: "",
+        morphology : "",
+        reproduction : "",
+        physiology: "",
+        ecological_works : "",
+        usage: "",
+        threats: "",
     },
 
     nymphea: {
-        title: "Nymphéa blanc (Nymphéa alba)",
-        description:
-            "Le nymphéa blanc est une plante aquatique flottante connue pour ses grandes fleurs blanches et ses feuilles arrondies.",
-        family: "Nymphéacées",
-        habitat: "Plans d'eau calmes comme mares, étangs et lacs peu profonds."
+        name_common: "Bruyère des marais",
+        name_scientific: "Erica tetralix",
+        family: "Ericaceae",
+        port: "",
+        status: "",
+        cycle: "",
+        
+        characteristics: "",
+        habitat: "",
+        morphology : "",
+        reproduction : "",
+        physiology: "",
+        ecological_works : "",
+        usage: "",
+        threats: "",
     },
 
     roseau: {
-        title: "Roseau commun (Phragmites australis)",
-        description:
-            "Le roseau commun est une grande plante herbacée des zones humides, souvent utilisée pour stabiliser les berges.",
-        family: "Poacées",
-        habitat: "Zones humides, marais, bords de cours d'eau et étangs."
+        name_common: "Bruyère des marais",
+        name_scientific: "Erica tetralix",
+        family: "Ericaceae",
+        port: "",
+        status: "",
+        cycle: "",
+        
+        characteristics: "",
+        habitat: "",
+        morphology : "",
+        reproduction : "",
+        physiology: "",
+        ecological_works : "",
+        usage: "",
+        threats: "",
     },
 
     mentha: {
-        title: "Menthe aquatique (Mentha aquatica)",
-        description:
-            "La menthe aquatique est une plante aromatique qui pousse sur les rives humides, avec un parfum caractéristique de menthe.",
-        family: "Lamiacées",
-        habitat: "Rives des étangs, mares et zones humides."
+        name_common: "Bruyère des marais",
+        name_scientific: "Erica tetralix",
+        family: "Ericaceae",
+        port: "",
+        status: "",
+        cycle: "",
+        
+        characteristics: "",
+        habitat: "",
+        morphology : "",
+        reproduction : "",
+        physiology: "",
+        ecological_works : "",
+        usage: "",
+        threats: "",
     }
 };
