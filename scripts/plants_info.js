@@ -1,9 +1,13 @@
 const plantsInfo = {
     Sphaigne: {
-        title: "Sphaigne (Sphagnum)",
-        description: "Les sphaignes sont des mousses capables de retenir beaucoup d'eau. Elles sont à l'origine de la formation de la tourbe en accumulant la matière organique dans des milieux pauvres en oxygène.",
+        nom_vernaculaire: "Sphaigne",
+        nom_scientifique: "Sphagnum spp.",
         family: "Sphagnaceae",
-        habitat: "Zones humides, tourbières acides"
+        habitat: "milieux acides et humides : tourbières, zones marécageuses ou détrempées",
+        Physiologie: "Les sphaignes sont des mousses gorgées d'eau qu'elles absorbent par leurs feuilles pourvues de hyalocytes, des cellules mortes capables de retenir jusqu'à 20 fois leur poids en eau. Leur croissance est lente et se fait sous forme de coussin et de tapis. Elles acidifient leur milieu en captant des cations comme le calcium et le magnésium.",
+        Fonctionnement_écologique : "Spécifique des tourbières acides, les sphaignes produisent la tourbe par décomposition, stocke l'eau dans le milieu, retient le carbone et fournit un habitat pour d'autres espèces.",
+        Reproduction : "Les sphaignes sont dioïque et peuvent se reproduire de manière sexuée via des spores ou asexuée par fragmentation.",
+        Morphologie : "Pas de système racinaire. La tige est fine, rougeâtre ou verte, portant une ramification en étoile",
     },
 
     EricaTetralix: {
