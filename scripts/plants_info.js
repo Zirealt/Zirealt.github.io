@@ -97,7 +97,7 @@ const plantsInfo = {
         status: "LC",
         cycle: "pérenne (30-50 ans)",
         
-        characteristics: "",
+        characteristics: "Le Saule cendré, est un arbuste buissonnant aux feuilles grisâtres privilégiant les zones humides comme les berges",
         habitat: "Zones humides ou marécageuse comme les tourbières, les berges, ou les zones marécageuses de l'hémisphère nord.",
         morphology : "Le bourgeon est lisse et recouvert d'une seule écaille donnant naissance à un fruit de type capsule, les feuilles sont obovales, alternes, longues (jusqu'à 12cm), rugueuses et a pointes courtes. Son écorce estt lisse et grise, avec de larges fissures peu profondes.",
         reproduction : "Espèce dioïque à reproduction végétative ou sexuée. Pollinisation entomogame ou anémogame.",
@@ -151,7 +151,7 @@ const plantsInfo = {
         status: "LC",
         cycle: "vivace",
         
-        characteristics: "",
+        characteristics: "Plante herbacée vivace des zones humides, le roseau commun forme des peuplements denses sur les berges ou autres zones humides",
         habitat: "Espèce cosmopolite des milieux humides, prospérant sur des sols gorgés d'eau et peu oxygéné",
         morphology : "Feuilles alternes et longues pourvues d'une gaine, les fleurs sont disposées en long plumeau violacés à maturité. Ses racines forment un long réseau de rhizomes horizontaux favorisant sa colonisation rapide. La tige est creuse, dressée et rigide",
         reproduction : "Principalement végétative grâce aux rhizomes, parfois sexuée par dispersition de graines légères par anémochories",
