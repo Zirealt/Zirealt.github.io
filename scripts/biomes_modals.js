@@ -36,7 +36,7 @@ function openModal(plantKey) {
     if (!plant) return;
     modalToShow = modalHTML;
     modalToShow = modalToShow.replace("[name_common]", plant.name_common);
-    modalToShow = modalToShow.replace("[name_scientific]", plant.name_scientific);
+    modalToShow = modalToShow.replace("[name_scientific]", "<i>" + plant.name_scientific + "</i>");
     modalToShow = modalToShow.replace("[family]", plant.family);
     modalToShow = modalToShow.replace("[port]", plant.port);
     modalToShow = modalToShow.replace("[status]", plant.status);

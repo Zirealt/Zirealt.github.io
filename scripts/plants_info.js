@@ -36,8 +36,8 @@ const plantsInfo = {
     },
 
     PolytrichumCommune: {
-        name_common: "Polytrichum commune",
-        name_scientific: "Polytriche commun",
+        name_common: "Polytriche Commun",
+        name_scientific: "Polytrichum commune",
         family: "Polytrichaceae",
         port: "mousse dressée et rigide (10-20cm)",
         status: "LC",
@@ -126,8 +126,8 @@ const plantsInfo = {
     },
 
     nymphea: {
-        name_common: "Nénuphar blanc",
-        name_scientific: "Nymphéa Blanc",
+        name_common: "Nénuphar Blanc",
+        name_scientific: "Nymphaea alba",
         family: "Nymphaeaceae",
         port: "Flottant",
         status: "LC",
@@ -145,7 +145,7 @@ const plantsInfo = {
 
     roseau: {
         name_common: "Roseau commun",
-        name_scientific: "Phragmites Australis",
+        name_scientific: "Phragmites australis",
         family: "Poaceae",
         port: "Elancé",
         status: "LC",
